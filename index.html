@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patrick Rucarean George — Portofoliu Web</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">Portofoliu Web</span>
+        <h1>Patrick Rucarean George</h1>
+        <p class="hero-text">Construiesc proiecte web reale, îmbin pasiunea pentru muzică și chitară cu gaming-ul, politica și dezvoltarea software.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Vezi proiectele</a>
+          <a class="btn btn-secondary" href="mailto:contact@patrick.dev">Contact</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=400&q=80" alt="Avatar Patrick" />
+      </div>
+    </header>
+
+    <section class="section about">
+      <div class="section-heading">
+        <h2>Despre mine</h2>
+      </div>
+      <p>Salut! Sunt pasionat de muzică, cânt la chitară și găsesc mereu inspirație în cultura gaming-ului și în analiza politică. În același timp, iubesc dezvoltarea web și îmi place să creez pagini și aplicații care arată bine și funcționează rapid.</p>
+      <div class="traits">
+        <div class="trait">
+          <strong>Muzică & Chitară</strong>
+          <p>Cântecul mă ajută să fiu creativ și să am o gândire structurată.</p>
+        </div>
+        <div class="trait">
+          <strong>Gaming</strong>
+          <p>Gaming-ul mă antrenează pentru logică, strategie și rezolvare rapidă.</p>
+        </div>
+        <div class="trait">
+          <strong>Politică</strong>
+          <p>Îmi place să înțeleg deciziile care influențează societatea.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-section">
+      <article class="info-card">
+        <h3>Profil</h3>
+        <p>Student și dezvoltator web, focusat pe frontend. Lucrez cu HTML, CSS, JavaScript și sunt interesat de proiecte practice.</p>
+        <ul>
+          <li>Nume: Patrick Rucarean George</li>
+          <li>Rol: Web Developer Junior</li>
+          <li>Interese: Muzică, gaming, politică, informatică</li>
+        </ul>
+      </article>
+      <article class="info-card">
+        <h3>Experiență</h3>
+        <p>Deși nu am încă o experiență profesională extinsă, am lucrat la proiecte personale și teme web care includ interfețe interactive și integrare API.</p>
+        <ul>
+          <li>Proiecte personale: portofoliu web, aplicații de căutare, pagini dinamice</li>
+          <li>Abilități: HTML, CSS, JavaScript, fetch API</li>
+        </ul>
+      </article>
+      <article class="info-card">
+        <h3>Educație</h3>
+        <p>Studii în domeniul informaticii, cu accent pe tehnologii web și dezvoltare de aplicații.</p>
+        <ul>
+          <li>Facultatea de Informatică — Universitate locală</li>
+          <li>Perioadă: 2023 — prezent</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <div class="section-heading">
+        <h2>Proiecte GitHub</h2>
+        <p>Proiectele sunt preluate din contul meu GitHub și sunt afișate dinamic.</p>
+      </div>
+
+      <div class="project-controls">
+        <input id="searchInput" type="search" placeholder="Caută proiecte..." />
+        <select id="sortSelect">
+          <option value="updated">Cele mai noi</option>
+          <option value="stars">Cele mai multe stele</option>
+        </select>
+      </div>
+
+      <div id="statusBar" class="status-bar">
+        <span id="statusText">Se încarcă proiectele...</span>
+        <span id="projectCount"></span>
+      </div>
+
+      <div id="repoGrid" class="repo-grid"></div>
+      <div class="load-more-row">
+        <button id="loadMoreBtn" class="btn btn-secondary" type="button">Încarcă mai multe</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Proiect realizat pentru semestru. Datele proiectelor sunt preluate din API-ul GitHub.</p>
+    </footer>
+  </div>
+
+  <script src="caca.js"></script>
+</body>
+</html>
